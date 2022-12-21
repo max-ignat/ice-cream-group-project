@@ -1,0 +1,193 @@
+.modal_buy-now {
+    height: 986px;
+    margin: 10% auto;
+}
+@media screen and (min-width: 768px) {
+    .modal_buy-now{
+    height: 644px;
+    padding: 32px 54px;
+    }
+}
+
+.prodacts-modal-list {
+    margin-top: 83px; 
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 83px;  
+}
+
+ @media screen and (min-width: 768px) {
+    .prodacts-modal-list {
+        margin: 103px 0 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 30px;
+        row-gap: 0;
+    }
+ }
+
+
+.products-modal-item{
+    width: 132px;
+    height: 135px; 
+    position: relative;
+    display: flex; 
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+}
+
+
+.ise-cream-modal{
+    border: 2px solid #96AF8C;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            transform: translate(-1px, -43%);
+            width: 131px;
+            height: 130px;
+            border-radius: 50%;
+    
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;  
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            transform: translate(-1px, -50%);
+            width: 131px;
+            height: 130px;
+        
+            background: url(../images/products/ice-cream-480@1x.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+
+        .checkbox:checked+& {
+                background: #96AF8C;
+                scale: 1.05;
+            }
+}
+
+.ise-coffee-modal{
+    border: 2px solid #EFD478;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15.7808px;
+
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translate(-1px, -43%);
+        width: 131px;
+        height: 130px;
+        border-radius: 50%;
+        
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translate(-1px, -50%);
+        width: 131px;
+        height: 130px;
+
+        background: url(../images/products/ice-coffee-480@1x.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .checkbox:checked+& {
+            background: #EFD478;
+            scale: 1.05;
+        }
+}
+
+.milkhake-modal{
+    border: 2px solid #D6936D;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translate(-1px, -43%);
+        width: 131px;
+        height: 130px;
+        border-radius: 50%;
+        
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+         }
+
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translate(-1px, -50%);
+        width: 131px;
+        height: 130px;
+
+        background: url(../images/products/milkshakes-480@1x.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .checkbox:checked+& {
+            background: #D6936D;
+            scale: 1.05;
+        }
+}
+
+
+.product-name {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313; 
+    cursor: pointer;
+}
+
+
+
